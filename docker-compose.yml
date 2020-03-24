@@ -1,0 +1,10 @@
+version: '3.0'
+services:
+    parity:
+        image: parity/parity:stable
+        working_dir: /home/parity'
+        volumes:
+            - ./data:/home/parity/data
+        ports:
+            - ${CFY_PORT}:8545
+        command: --config dev -d /home/parity/data --ui-interface all --jsonrpc-interface all
