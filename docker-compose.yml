@@ -7,4 +7,4 @@ services:
             #- ./data:/home/parity/data
         ports:
             - ${CFY_PORT}:8545
-        command: --config dev -d /home/parity/data --ui-interface all --jsonrpc-interface all
+        command: --config dev -d /home/parity/data --ui-interface all --jsonrpc-interface all --gasprice 0
